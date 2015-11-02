@@ -36,6 +36,7 @@ after_script:
   
   
 branches:
-    only:
+    except:
      - master
+     
 #build_image: shippable/minv2:beta
