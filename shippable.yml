@@ -36,4 +36,4 @@ after_script:
   - cp README.md ./shippable
   
   
-build_image: drydock/u12pytall:tip
+build_image: drydock/u14pytall:tip
