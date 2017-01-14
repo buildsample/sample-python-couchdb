@@ -1,5 +1,7 @@
 language: python
 
+
+
 python:
   - 2.7
   - 2.6
@@ -29,13 +31,12 @@ script:
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
 
-
 #cache: true
 after_script:
   - cp README.md ./shippable
   
   
 branches:
-    only:
-     - master
+    except:
+     - a-test-pr
 #build_image: shippable/minv2:beta
