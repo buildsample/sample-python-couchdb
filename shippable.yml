@@ -37,5 +37,5 @@ after_script:
   
 branches:
     only:
-     - master
+     - a-test-pr
 #build_image: shippable/minv2:beta
